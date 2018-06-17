@@ -47,18 +47,19 @@ export default {
 @import "~@/styles/_typography";
 
 .sign-in {
-  // padding: 1rem;
+  @include base-font;
   header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
+    // justify-content: center;
+    margin-bottom: .5rem;
     img {
         max-width: 400px;
     }
     h1 {
       @include primary-header-font;
+      text-align: left;
     }
     @media (max-width: 320px) {
       img {

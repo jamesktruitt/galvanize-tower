@@ -22,20 +22,14 @@ export default {
 
 <style lang='scss'>
 @import '~@/styles/_resets';
-#app {
-  font-family: 'Avenir', Helvetica, Ariel;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+
 #nav {
-  padding-top: 20px;
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
   a {
     font-weight: bold;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     color: #2c3e50;
     &.router-link-exact-active {
       color: #1A7798;
@@ -45,11 +39,14 @@ export default {
 
 img {
   max-width: 400px;
+  display: block;
+  margin: 1rem auto .5rem auto;
 }
 
-h1 {
-  @include primary-header-font;
-}
+// h1 {
+//   @include primary-header-font;
+// }
+
 @media (max-width: 320px) {
   img {
     max-width: 100%;
