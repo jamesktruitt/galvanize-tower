@@ -1,7 +1,6 @@
 <template>
   <div class="sign-in">
     <header>
-      <img src='../assets/biggie_logo.png' />
       <h1>Sign In</h1>
     </header>
     <main>
@@ -20,7 +19,7 @@
 // import {mapState} from "vuex";
 
 export default {
-  name: "Home",
+  name: "signIn",
   data(){
     return {
       name: "",

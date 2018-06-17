@@ -4,6 +4,7 @@
       <router-link to='/'>Home</router-link>
       <router-link to='/about'>About</router-link>
     </div>
+    <img src='./assets/biggie_logo.png' alt='Top 5 Logo'/>
     <router-view/>
   </div>
 </template>
@@ -39,6 +40,19 @@ export default {
     &.router-link-exact-active {
       color: #1A7798;
     }
+  }
+}
+
+img {
+  max-width: 400px;
+}
+
+h1 {
+  @include primary-header-font;
+}
+@media (max-width: 320px) {
+  img {
+    max-width: 100%;
   }
 }
 </style>
