@@ -1,32 +1,106 @@
-# Requirements
+# Features
 
-## Functional
+## Deploy a Galvanize Vote Splash page
 
-* [x] Informs the user that their balance is $387
-* [ ] Prompts the user to enter a payment amount
-* [ ] User cannot enter less than $0 or more than $387
-* [ ] Accepts a credit card
-* [ ] Amount charged is displayed on success
-* [ ] If a charge doesn't go through, an error page is displayed
+* [x] Generate a vue app
+* [x] Clean up files
+* [x] Add `.env` and `node_modules` to `.gitignore`
+* [x] Add sign-in route and (serves as our splash page)
+* [x] Add SASS files: resets, typography, colors
+* [x] Add icon fonts
+* [x] Deploy
 
-## Style
+### List topics
 
-* [ ] Proper indentation
-* [ ] Consistent semicolon usage
-* [ ] Server key isn't committed
+* [ ] Generate a home route and view in Vue
+* [ ] Generate an index route and view in Vue
+* [ ] Add topics to Vuex store
+* [ ] Add a `listTopics` action and mutation
+* [ ] Create a `lessonTopic` component
+* [ ] Make an express app (`index.js` and `app.js`)
+* [ ] Create `start` and `dev` scripts
+* [ ] Add dependencies: `body-parser`, `cors`, `dotenv`, `express`, `knex`, `m[ ] organ`, `pg`, `nodemon`
+* [ ] Add middleware
+* [ ] Create `404` and `500` and handlers
+* [ ] Create a database
+* [ ] Create a `knexfile`
+* [ ] Create a topic migration
+* [ ] Create a topic seed
+* [ ] Create a database connection
+* [ ] Create a topic router
+* [ ] Create a `/topic` route
+* [ ] Create a topic model
+* [ ] Add `list` to topic model
+* [ ] Deploy backend
+* [ ] Deploy front-end
 
-## Galvanize Tower
+## Archive a topic
 
-In this project, you'll build a full-stack application that has an API, reads and writes data, and uses a library. The topic is up to you!
+* [ ] Create a close-button component
+* [ ] Create an archive action
+* [ ] Create an archive mutation
+* [ ] Create `DELETE /topic` route
+* [ ] Add `archive` to the topic model
 
-## Requirements
+## Vote for a topic
 
-* Has an API that can list, read, update, create, and delete data
-* Has a database backing that API that has at least 2 different tables
-* Has a front-end that uses an application framework or component library that:
-* Consumes your API (list, read, update, create, and delete actions)
-* Uses some non-trivial (charting, mapping, payment, etc.) library
-  * Has at least 2 end-to-end tests
+* [ ] Add sign-in form
+* [ ] Create Vote button component
+* [ ] Add `currentUser` to state
+* [ ] Add Sign-in action and mutation
+* [ ] Add Downvote mutation & action
+* [ ] Add Upvote mutation & action
+* [ ] Add toggle vote action
+* [ ] Create `user` migration
+* [ ] Create `user` seed
+* [ ] Create `vote` migration
+* [ ] Create `vote` seed
+* [ ] Create User model
+* [ ] Add `create` to User model
+* [ ] Add `update` to User model
+* [ ] Add `upsert` to User model
+* [ ] Create Vote model
+* [ ] Add `create` to vote model
+* [ ] Add `remove` to vote model
+* [ ] Create `user` router
+* [ ] Add user upsert route
+* [ ] Add topic upvote route
+* [ ] Add upvote to topic model
+* [ ] Add topic downvote route
+* [ ] Add downvote to topic model
+* [ ] Add `/upvote` route to topic
+* [ ] Add `/downvote` route to topic
 
-Add a link to your [deployed front-end URL](), your [deployed API URL](), and any [code repos you used]().
+## List voters
 
+* [ ] Create Name bubble Component
+* [ ] Add `list` to vote model
+* [ ] Add `listByTopic` to vote model
+* [ ] Add `readByUser` to vote model
+* [ ] Add `list` to user model
+* [ ] Add `listSome` to user model
+* [ ] Add `listSome` to topic model
+* [ ] Add `addUserVotesToTopics` to topic model
+* [ ] Add `addVotersToTopics` to topic model
+* [ ] Add `listWithVotes` to topic model
+* [ ] Switch `listTopics` action to use `listWithVotes`
+
+## Sort topics by vote
+
+* [ ] Add current user voted topics to `getters`
+* [ ] Add sortedTopics to `getters`
+* [ ] Use computed property for list
+
+## Add a topic
+
+* [ ] Create Compose window component
+* [ ] Create New button component
+* [ ] Create submit topic action & mutation
+* [ ] Create `topic` POST route
+* [ ] Add create to `topic` model
+
+## Topic detail
+
+* [ ] Create Vue detail route
+* [ ] Create topic detail view
+* [ ] Create nameplate component
