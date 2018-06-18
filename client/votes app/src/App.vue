@@ -1,55 +1,15 @@
 <template>
   <div id="app">
-    <div id='nav'>
-      <router-link to='/'>Home</router-link>
-      <router-link to='/about'>About</router-link>
-    </div>
-    <img src='./assets/biggie_logo.png' alt='Top 5 Logo'/>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import SignIn from '@/views/SignIn.vue'
-
 export default {
-  name: 'App',
-  components: {
-    SignIn
-  }
+  name: "App"
 }
 </script>
 
-<style lang='scss'>
-@import '~@/styles/_resets';
-
-#nav {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: center;
-  a {
-    font-weight: bold;
-    padding: 0 1rem;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #1A7798;
-    }
-  }
-}
-
-img {
-  max-width: 400px;
-  display: block;
-  margin: 1rem auto .5rem auto;
-}
-
-// h1 {
-//   @include primary-header-font;
-// }
-
-@media (max-width: 320px) {
-  img {
-    max-width: 100%;
-  }
-}
+<style lang="scss">
+@import "~@/styles/_resets";
 </style>

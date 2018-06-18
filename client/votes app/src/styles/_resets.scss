@@ -1,14 +1,14 @@
 @import "_typography";
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 button {
-  border: none;
+    border: none;
 }
 body {
-  @include base-font;
+    @include base-font;
 }
