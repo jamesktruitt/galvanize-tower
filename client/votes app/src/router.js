@@ -13,7 +13,7 @@ export default new Router({
         name: "signIn",
         component: SignIn
     },{
-        path: "/topics",
+        path: "/artists",
         component: Home,
         children: [{
             name: "topicIndex",
@@ -21,7 +21,7 @@ export default new Router({
             component: TopicIndex
         },{
             name: "topicDetail",
-            path: "topics/:topic_id",
+            path: "artists/:topic_id",
             component: TopicDetail
         }]
     }]

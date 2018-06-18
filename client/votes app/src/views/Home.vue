@@ -15,13 +15,22 @@
       <compose-window :class="{hidden:!modalOpen}" @close="closeModal" @submit="submitTopic"></compose-window>
       <new-button v-show="!this.modalOpen" @add="add"></new-button>
     </main>
+    <body>
+      <ul class='artists-list'>
+        <li>Tupac</li>
+        <li>Kendrick Lamar</li>
+        <li>Nasir Jones</li>
+        <li>Andre 3000</li>
+        <li>Biggie Smalls</li>
+      </ul> 
+    </body>
   </div>
 </template>
-
+<!-- eslint-disable-->
 <script>
 import NewButton from "../components/NewButton";
 import ComposeWindow from "../components/ComposeWindow";
-// import {mapState} from "vuex";
+import {mapState} from "vuex";
 
 export default {
   name: "Home",
@@ -83,6 +92,19 @@ export default {
       background-color: $accent-color;
       color: $white;
     }
+  }
+  .artists-list {
+    padding: 0 1rem; 
+    ul { 
+      li {
+        }
+    }
+    li {
+      box-shadow: 0 0px 1px $medium-grey;
+      padding: 2rem;
+      max-width: 30rem;
+      margin-bottom: 1rem;
+    }  
   }
 }
 </style>

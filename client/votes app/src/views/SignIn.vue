@@ -10,14 +10,14 @@
         <input type="email" name="email" id="email" v-model="email" required="required"/>
         <label for="name">Name</label>
         <input type="text" name="name" id="name" v-model="name" required="required"/>
-        <input type="submit" value="Who's Your Top 5 | Vote Now!"/>
+        <input type="submit" value="Who's In Your Top 5 | Vote Now!"/>
       </form>
     </main>
   </div>
 </template>
-
+<!-- eslint-disable-->
 <script>
-// import {mapState} from "vuex";
+import {mapState} from "vuex";
 
 export default {
   name: "Home",
